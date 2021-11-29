@@ -38,7 +38,7 @@ RUN mkdir -p /home/$user/.composer && \
 RUN a2enmod rewrite
 
 # set our application folder as an environment variable
-ENV APP_HOME /var/www/html/quiz
+ENV APP_HOME /var/www/html/unimart
 
 # copy source files
 COPY . $APP_HOME
