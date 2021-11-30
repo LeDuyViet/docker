@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/dashboard', function () {
+    return 'hihi';
+});
+Route::get('/test', function () {
+    dd(env('APP_SERVICE')); // Dump 'db' variable value one by one
+    return 'test';
+});
